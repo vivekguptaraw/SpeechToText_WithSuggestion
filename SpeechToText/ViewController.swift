@@ -83,6 +83,10 @@ class ViewController: UIViewController {
     func buildUI()
     {
         micIcon.image = UIImage(systemName: "mic.slash.fill")
+        micIcon.tintColor = UIColor.black.withAlphaComponent(0.6)
+        textField.layer.borderColor = UIColor.gray.withAlphaComponent(0.8).cgColor
+        textField.layer.cornerRadius = 8
+        textField.layer.borderWidth = 1
         let searchImageTapGesture = UITapGestureRecognizer(target: self, action: #selector(searchTapped))
         self.searchImageView.addGestureRecognizer(searchImageTapGesture)
 
