@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CEC1D6DDE52C7A072D4F40D /* Pods_SpeechToTextTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB1CBD93ABB25BC5D6F0862 /* Pods_SpeechToTextTests.framework */; };
+		5986328030EBD7C0E3D42D53 /* Pods_SpeechToText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C26AE1AE66BDC6FCC79AF4B /* Pods_SpeechToText.framework */; };
+		80AC09B32480E4A000F0B1A1 /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC09B22480E4A000F0B1A1 /* RealmProvider.swift */; };
+		80AC09B52480E4DC00F0B1A1 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC09B42480E4DC00F0B1A1 /* RealmManager.swift */; };
+		80AC09B72480E51D00F0B1A1 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC09B62480E51D00F0B1A1 /* DataManagerProtocol.swift */; };
+		80AC09B92480E8D000F0B1A1 /* SpeechDataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC09B82480E8D000F0B1A1 /* SpeechDataBaseManager.swift */; };
+		80AC09BB2480E96000F0B1A1 /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC09BA2480E96000F0B1A1 /* SpeechViewModel.swift */; };
+		80AC09BE2480EC4B00F0B1A1 /* UtterenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC09BD2480EC4B00F0B1A1 /* UtterenceModel.swift */; };
+		80AC09C12480EFEB00F0B1A1 /* UtterenceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC09C02480EFEB00F0B1A1 /* UtterenceDTO.swift */; };
 		80E9C021247FA60C004A1883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9C020247FA60C004A1883 /* AppDelegate.swift */; };
 		80E9C023247FA60C004A1883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9C022247FA60C004A1883 /* SceneDelegate.swift */; };
 		80E9C025247FA60C004A1883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9C024247FA60C004A1883 /* ViewController.swift */; };
@@ -14,6 +23,9 @@
 		80E9C02A247FA60E004A1883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E9C029247FA60E004A1883 /* Assets.xcassets */; };
 		80E9C02D247FA60E004A1883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E9C02B247FA60E004A1883 /* LaunchScreen.storyboard */; };
 		80E9C038247FA60E004A1883 /* SpeechToTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9C037247FA60E004A1883 /* SpeechToTextTests.swift */; };
+		80E9C043247FA65B004A1883 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9C042247FA65B004A1883 /* SpeechManager.swift */; };
+		80E9C046247FB265004A1883 /* SpeechTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9C044247FB265004A1883 /* SpeechTextTableViewCell.swift */; };
+		80E9C047247FB265004A1883 /* SpeechTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E9C045247FB265004A1883 /* SpeechTextTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48E23E0D0CC844B8C50A592E /* Pods-SpeechToTextTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechToTextTests.debug.xcconfig"; path = "Target Support Files/Pods-SpeechToTextTests/Pods-SpeechToTextTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C26AE1AE66BDC6FCC79AF4B /* Pods_SpeechToText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechToText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4910FB11529CDD3CC3FBF1 /* Pods-SpeechToText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechToText.debug.xcconfig"; path = "Target Support Files/Pods-SpeechToText/Pods-SpeechToText.debug.xcconfig"; sourceTree = "<group>"; };
+		80AC09B22480E4A000F0B1A1 /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		80AC09B42480E4DC00F0B1A1 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		80AC09B62480E51D00F0B1A1 /* DataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
+		80AC09B82480E8D000F0B1A1 /* SpeechDataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechDataBaseManager.swift; sourceTree = "<group>"; };
+		80AC09BA2480E96000F0B1A1 /* SpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewModel.swift; sourceTree = "<group>"; };
+		80AC09BD2480EC4B00F0B1A1 /* UtterenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtterenceModel.swift; sourceTree = "<group>"; };
+		80AC09C02480EFEB00F0B1A1 /* UtterenceDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtterenceDTO.swift; sourceTree = "<group>"; };
 		80E9C01D247FA60C004A1883 /* SpeechToText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechToText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E9C020247FA60C004A1883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E9C022247FA60C004A1883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +60,12 @@
 		80E9C033247FA60E004A1883 /* SpeechToTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechToTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E9C037247FA60E004A1883 /* SpeechToTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextTests.swift; sourceTree = "<group>"; };
 		80E9C039247FA60E004A1883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E9C042247FA65B004A1883 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		80E9C044247FB265004A1883 /* SpeechTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTextTableViewCell.swift; sourceTree = "<group>"; };
+		80E9C045247FB265004A1883 /* SpeechTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeechTextTableViewCell.xib; sourceTree = "<group>"; };
+		8CB1CBD93ABB25BC5D6F0862 /* Pods_SpeechToTextTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechToTextTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF69AF9D57F0EA3A080353A /* Pods-SpeechToText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechToText.release.xcconfig"; path = "Target Support Files/Pods-SpeechToText/Pods-SpeechToText.release.xcconfig"; sourceTree = "<group>"; };
+		E80E86645463DD02F74C1F8A /* Pods-SpeechToTextTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechToTextTests.release.xcconfig"; path = "Target Support Files/Pods-SpeechToTextTests/Pods-SpeechToTextTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5986328030EBD7C0E3D42D53 /* Pods_SpeechToText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +81,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEC1D6DDE52C7A072D4F40D /* Pods_SpeechToTextTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DF624A480C0560B1CB219FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C26AE1AE66BDC6FCC79AF4B /* Pods_SpeechToText.framework */,
+				8CB1CBD93ABB25BC5D6F0862 /* Pods_SpeechToTextTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80AC09B12480DDD300F0B1A1 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				80AC09BF2480EFD700F0B1A1 /* DTO */,
+				80AC09BC2480EC3200F0B1A1 /* DBModel */,
+				80AC09B82480E8D000F0B1A1 /* SpeechDataBaseManager.swift */,
+				80AC09B22480E4A000F0B1A1 /* RealmProvider.swift */,
+				80AC09B42480E4DC00F0B1A1 /* RealmManager.swift */,
+				80AC09B62480E51D00F0B1A1 /* DataManagerProtocol.swift */,
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
+		80AC09BC2480EC3200F0B1A1 /* DBModel */ = {
+			isa = PBXGroup;
+			children = (
+				80AC09BD2480EC4B00F0B1A1 /* UtterenceModel.swift */,
+			);
+			path = DBModel;
+			sourceTree = "<group>";
+		};
+		80AC09BF2480EFD700F0B1A1 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				80AC09C02480EFEB00F0B1A1 /* UtterenceDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 		80E9C014247FA60C004A1883 = {
 			isa = PBXGroup;
 			children = (
 				80E9C01F247FA60C004A1883 /* SpeechToText */,
 				80E9C036247FA60E004A1883 /* SpeechToTextTests */,
 				80E9C01E247FA60C004A1883 /* Products */,
+				8B3654C425DB383BD35EBFA5 /* Pods */,
+				6DF624A480C0560B1CB219FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +149,7 @@
 		80E9C01F247FA60C004A1883 /* SpeechToText */ = {
 			isa = PBXGroup;
 			children = (
+				80AC09B12480DDD300F0B1A1 /* DBManager */,
 				80E9C020247FA60C004A1883 /* AppDelegate.swift */,
 				80E9C022247FA60C004A1883 /* SceneDelegate.swift */,
 				80E9C024247FA60C004A1883 /* ViewController.swift */,
@@ -86,6 +157,10 @@
 				80E9C029247FA60E004A1883 /* Assets.xcassets */,
 				80E9C02B247FA60E004A1883 /* LaunchScreen.storyboard */,
 				80E9C02E247FA60E004A1883 /* Info.plist */,
+				80E9C042247FA65B004A1883 /* SpeechManager.swift */,
+				80AC09BA2480E96000F0B1A1 /* SpeechViewModel.swift */,
+				80E9C044247FB265004A1883 /* SpeechTextTableViewCell.swift */,
+				80E9C045247FB265004A1883 /* SpeechTextTableViewCell.xib */,
 			);
 			path = SpeechToText;
 			sourceTree = "<group>";
@@ -99,6 +174,17 @@
 			path = SpeechToTextTests;
 			sourceTree = "<group>";
 		};
+		8B3654C425DB383BD35EBFA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D4910FB11529CDD3CC3FBF1 /* Pods-SpeechToText.debug.xcconfig */,
+				DEF69AF9D57F0EA3A080353A /* Pods-SpeechToText.release.xcconfig */,
+				48E23E0D0CC844B8C50A592E /* Pods-SpeechToTextTests.debug.xcconfig */,
+				E80E86645463DD02F74C1F8A /* Pods-SpeechToTextTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80E9C03C247FA60E004A1883 /* Build configuration list for PBXNativeTarget "SpeechToText" */;
 			buildPhases = (
+				999266AA7929EEF793F06AFE /* [CP] Check Pods Manifest.lock */,
 				80E9C019247FA60C004A1883 /* Sources */,
 				80E9C01A247FA60C004A1883 /* Frameworks */,
 				80E9C01B247FA60C004A1883 /* Resources */,
+				3D931A79298185022E484F09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80E9C03F247FA60E004A1883 /* Build configuration list for PBXNativeTarget "SpeechToTextTests" */;
 			buildPhases = (
+				2A337A63DFA5A5D4CED2B701 /* [CP] Check Pods Manifest.lock */,
 				80E9C02F247FA60E004A1883 /* Sources */,
 				80E9C030247FA60E004A1883 /* Frameworks */,
 				80E9C031247FA60E004A1883 /* Resources */,
@@ -180,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E9C047247FB265004A1883 /* SpeechTextTableViewCell.xib in Resources */,
 				80E9C02D247FA60E004A1883 /* LaunchScreen.storyboard in Resources */,
 				80E9C02A247FA60E004A1883 /* Assets.xcassets in Resources */,
 				80E9C028247FA60C004A1883 /* Main.storyboard in Resources */,
@@ -195,14 +285,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A337A63DFA5A5D4CED2B701 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechToTextTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D931A79298185022E484F09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechToText/Pods-SpeechToText-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechToText/Pods-SpeechToText-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechToText/Pods-SpeechToText-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		999266AA7929EEF793F06AFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechToText-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80E9C019247FA60C004A1883 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				80E9C025247FA60C004A1883 /* ViewController.swift in Sources */,
+				80AC09BE2480EC4B00F0B1A1 /* UtterenceModel.swift in Sources */,
+				80E9C043247FA65B004A1883 /* SpeechManager.swift in Sources */,
+				80AC09B32480E4A000F0B1A1 /* RealmProvider.swift in Sources */,
+				80AC09B72480E51D00F0B1A1 /* DataManagerProtocol.swift in Sources */,
+				80AC09BB2480E96000F0B1A1 /* SpeechViewModel.swift in Sources */,
 				80E9C021247FA60C004A1883 /* AppDelegate.swift in Sources */,
+				80AC09C12480EFEB00F0B1A1 /* UtterenceDTO.swift in Sources */,
 				80E9C023247FA60C004A1883 /* SceneDelegate.swift in Sources */,
+				80AC09B52480E4DC00F0B1A1 /* RealmManager.swift in Sources */,
+				80AC09B92480E8D000F0B1A1 /* SpeechDataBaseManager.swift in Sources */,
+				80E9C046247FB265004A1883 /* SpeechTextTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +511,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -360,16 +523,20 @@
 		};
 		80E9C03D247FA60E004A1883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4910FB11529CDD3CC3FBF1 /* Pods-SpeechToText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9GU36QFD53;
 				INFOPLIST_FILE = SpeechToText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.SpeechToText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "com.raweng.sandbox Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,16 +544,20 @@
 		};
 		80E9C03E247FA60E004A1883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF69AF9D57F0EA3A080353A /* Pods-SpeechToText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9GU36QFD53;
 				INFOPLIST_FILE = SpeechToText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.SpeechToText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "com.raweng.sandbox Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -394,6 +565,7 @@
 		};
 		80E9C040247FA60E004A1883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E23E0D0CC844B8C50A592E /* Pods-SpeechToTextTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +587,7 @@
 		};
 		80E9C041247FA60E004A1883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E80E86645463DD02F74C1F8A /* Pods-SpeechToTextTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

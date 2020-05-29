@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpeechToText" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="F9y-zM-94O">
+                                <rect key="frame" x="20" y="79" width="374" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CMM-Xb-wnj">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ZWp-Fj-6fU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="uKN-o3-7pW">
+                                        <rect key="frame" x="374" y="3" width="0.0" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="5ZZ-eM-dcW"/>
+                                            <constraint firstAttribute="width" id="fnk-7W-0ed"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uc1-0Z-OCv">
+                                <rect key="frame" x="0.0" y="149" width="414" height="589"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic" translatesAutoresizingMaskIntoConstraints="NO" id="dJm-7I-lxf">
+                                <rect key="frame" x="177" y="758" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="FFp-cQ-hSJ"/>
+                                    <constraint firstAttribute="height" constant="60" id="bdc-Rm-Eqy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="F9y-zM-94O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="6vu-U1-Xhv"/>
+                            <constraint firstItem="dJm-7I-lxf" firstAttribute="top" secondItem="uc1-0Z-OCv" secondAttribute="bottom" constant="20" id="8Yf-Bc-Wre"/>
+                            <constraint firstItem="uc1-0Z-OCv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jr0-Hk-aRG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F9y-zM-94O" secondAttribute="trailing" constant="20" id="MrG-Xo-KSe"/>
+                            <constraint firstItem="uc1-0Z-OCv" firstAttribute="top" secondItem="F9y-zM-94O" secondAttribute="bottom" constant="20" id="S3h-c3-CKM"/>
+                            <constraint firstItem="dJm-7I-lxf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="USo-Gt-hh2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uc1-0Z-OCv" secondAttribute="trailing" id="V4I-X8-7JN"/>
+                            <constraint firstItem="F9y-zM-94O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i4T-US-f86"/>
+                            <constraint firstItem="F9y-zM-94O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lx8-7j-lui"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dJm-7I-lxf" secondAttribute="bottom" constant="44" id="sv7-8l-S00"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="micIcon" destination="dJm-7I-lxf" id="c9g-ed-qZq"/>
+                        <outlet property="searchImageView" destination="uKN-o3-7pW" id="jgo-WH-iQd"/>
+                        <outlet property="tableView" destination="uc1-0Z-OCv" id="I4d-73-tm9"/>
+                        <outlet property="textField" destination="CMM-Xb-wnj" id="d4G-h9-o9h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="96"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mic" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="search" width="256" height="256"/>
+    </resources>
 </document>
